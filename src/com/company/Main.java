@@ -8,7 +8,7 @@ public class Main {
     
     //compares the stripped input with its reverse to check for palindrome
     private static Boolean compareStrings(String stripped, String reverse) {
-    
+        
         return stripped.equals(reverse);
     }
     
@@ -34,16 +34,16 @@ public class Main {
         return reverse.toString();
     }
     
-    public static void results(){
+    public static void results() {
         System.out.println("Type out a word:");
         
-        String input    = TextIO.getln();
+        String input = TextIO.getln();
         String stripped = removeSpecialChar(input);
-        String reverse  = reverseInput(stripped);
+        String reverse = reverseInput(stripped);
         
         Boolean stringsMatch = compareStrings(stripped, reverse);
-    
-        if(input.contains("exit")){
+        
+        if (input.contains("exit")) {
             System.exit(0);
         }
         
